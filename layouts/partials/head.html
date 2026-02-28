@@ -52,8 +52,8 @@
   {{ end }}
 
   {{/* Social */}}
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
+  {{ partial "opengraph.html" . }}
+  {{ partial "twitter_cards.html" . }}
   {{/* Use defaultSocialImage if feature image does not exist */}}
   {{ $featureImage := "" }}
   {{ $pageImages := .Resources.ByType "image" }}
